@@ -5,3 +5,4 @@ home/__pycache__
 home/migrations/
 venv/
 db.sqlite3
+.env
