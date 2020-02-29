@@ -1,0 +1,380 @@
+{% load static %}
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Connect Routes -- Home</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Connect Routes -- Get your rides easily." />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        // function hideURLbar() {
+        //     window.scrollTo(0, 1);
+        // }
+
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="{% static 'home/css/bootstrap.css' %}">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="{% static 'home/css/font-awesome.css' %}" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+    <!-- //Fonts -->
+</head>
+
+<body>
+    <!-- mian-content -->
+    <div class="main-content" id="home">
+        <div class="layer">
+            <header>
+                <div class="container-fluid px-lg-5">
+                    <!-- nav -->
+                    <nav class="py-4 d-lg-flex">
+                        <div id="logo">
+                            <h1><a href="{% url 'home' %}"><img src="{% static 'home/images/long.png' %}" width="140px"/></a></h1>
+                        </div>
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu mt-2 ml-auto">
+                            <li class="active"><a class="other-links" href="{% url 'home' %}">Home</a></li>
+                            <li><a href="#about" class="scroll">About</a></li>
+                            <li><a href="{% url 'driver-reg' %}" class="scroll">Join As Driver</a></li>
+                            <li><a href="{% url 'faq' %}" class="scroll">FAQs</a></li>
+                            <li><a href="#contact" class="scroll">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- //nav -->
+                </div>
+            </header>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 first-side">
+                    <div class="banner-info-w3ls text-left">
+                        <h3>Seamless solution for all your trips</h3>
+                        <ul class="list-unstyled apps-lists">
+                            <li>
+                                <a href="#"><img src="{% static 'home/images/playstore.png' %}" width="120px" alt=""></a>
+                            </li>
+                            <li class="ml-2">
+                                <a href="#"><img src="{% static 'home/images/apple.png' %}" width="120px" alt=""></a>
+                            </li>
+                        </ul>                    
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 other-side"></div>
+            </div>
+            <div class="container">
+                <!-- /banner -->
+                
+                <!-- <div class="row order-info">
+                    <div class="middle mt-md-3 col-sm-6 text-left">
+                        <ul class="social mb-4">
+                            <li><a href="#"><span class="fa fa-facebook icon_facebook"></span></a></li>
+                            <li><a href="#"><span class="fa fa-twitter icon_twitter"></span></a></li>
+                            <li><a href="#"><span class="fa fa-google-plus icon_google-plus"></span></a></li>
+                            <li><a href="#"><span class="fa fa-linkedin icon_linkedin"></span></a></li>
+                            <li><a href="#"><span class="fa fa-dribbble icon_dribbble"></span></a></li>
+                        </ul>
+
+                    </div>
+                    <div class="middle-right mt-md-3 col-sm-6 text-sm-right">
+                        
+                    </div>
+                </div> -->
+            </div>
+            <!-- //banner -->
+        </div>
+    </div>
+    <!--// mian-content -->
+    <!-- banner-bottom-w3layouts -->
+    <!-- <section class="banner-bottom-w3layouts py-5" id="about">
+        <div class="container py-md-3">
+            <div class="row banner-grids">
+                <div class="col-md-6 content-left-bottom text-left pr-lg-5">
+                    <h4>ABOUT ROUTES</h4>
+                    <p class="mt-2 text-left"> <strong class="text-capitalize">Routes</strong> is a carpooling mobile application that connects passengers to drivers seamlessly to drivers going to the same destination, Routes also connects passengers to drivers that are not exactly going to their destination but will go through passenger’s destination. </p>
+
+                </div>
+                <div class="col-md-6 content-right-bottom text-left">
+                    <img src="{% static 'home/images/ab.png' %}" alt="news image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="driver-signup">
+        <div class="container">
+            <div class="col-md-12 content-left-bottom text-left pr-lg-5">
+                <h4 class="text-center" id="text-white">Do you want to earn extra?</h4>
+                <p class="mt-2 text-center white-text"><a href="{% url 'driver-reg' %}" class="driver-link btn">SIGN UP TO DRIVE</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- //banner-bottom-w3layouts -->
+    <!--/ about -->
+    <section class="services py-5" id="services">
+        <div class="container py-md-5">
+            <div class="header pb-lg-3 pb-3 text-center">
+                <h3 class="tittle mb-lg-3 mb-3">What We Offer</h3>
+            </div>
+            <div class="row ab-info mt-lg-4">
+                <div class="col-lg-4 ab-content">
+                    <div class="ab-content-inner">
+                        <div class="ab-info-con">
+                            <div class="ab-icon mx-auto"><span class="fa fa-search" aria-hidden="true"></span></div>
+                            <h4>Get a ride</h4>
+                            <p>Routes offers you a ride in minutes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 ab-content">
+                    <div class="ab-content-inner">
+                        <div class="ab-info-con">
+                            <div class="ab-icon mx-auto"><span class="fa fa-car" aria-hidden="true"></span></div>
+                            <h4>The best prices</h4>
+                            <p>We aim to offer the best ride prices in every city.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 ab-content">
+                    <div class="ab-content-inner">
+                        <div class="ab-info-con">
+                            <div class="ab-icon mx-auto"><span class="fa fa-star-o" aria-hidden="true"></span></div>
+                            <h4>Easy to use</h4>
+                            <p>Get wherever you need to go fast and safe.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--// about -->
+    <!--/mid-sec-->
+    <section class="mid-sec py-5" id="menu">
+        <div class="container py-lg-5">
+            <div class="header pb-lg-3 pb-3 text-center">
+                <h3 class="tittle mb-lg-3 mb-3">Our Benifits</h3>
+            </div>
+            <div class="row middile-inner-con mt-md-3">
+                <div class="col-lg-6 benifit-content">
+                    <div class="row">
+                        <div class="col-md-8 benifit-left-info text-right">
+                            <h4 class="mb-3">Safe</h4>
+                            <p>Routes is safe and secure. You have one less thing to worry about.</p>
+                        </div>
+                        <div class="col-md-4 benifit-icon-content">
+                            <div class="benifit-icon">
+                                <span class="fa fa-shield" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-md-8 benifit-left-info text-right">
+                            <h4 class="mb-3">Affordable</h4>
+                            <p>Rides from Routes are cheap and affordable.</p>
+                        </div>
+                        <div class="col-md-4 benifit-icon-content">
+                            <div class="benifit-icon">
+                                <span class="fa fa-money" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 benifit-content">
+                    <img src="{% static 'home/images/benifits.jpg' %}" alt="" class="img-fluid">
+                </div> -->
+                <div class="col-lg-6 benifit-content">
+                    <div class="row">
+                        <div class="col-md-4 benifit-icon-content">
+                            <div class="benifit-icon text-md-center mx-auto">
+                                <span class="fa fa-clock-o" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-8 benifit-left-info text-left">
+                            <h4 class="mb-3">Timely</h4>
+                            <p>Routes helps you get to your destination in time.</p>
+                        </div>
+                    </div>
+
+                    <div class="row  my-4">
+                        <div class="col-md-4 benifit-icon-content">
+                            <div class="benifit-icon text-md-center mx-auto">
+                                <span class="fa fa-refresh" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-8 benifit-left-info text-left">
+                            <h4 class="mb-3">Convenient</h4>
+                            <p>Routes app is easy to use. So enjoy your trips.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!--//mid-sec-->
+
+    <!--/ banner-bottom-w3layouts-->
+    <section class="app-serve pt-5">
+        <div class="container-fluid pt-lg-5">
+            <div class="ab-grids row text-left">
+                <div class="col-lg-6 pl-0 pr-lg-5 mt-lg-5 app-mob">
+                    <img src="{% static 'home/images/app1.png' %}" class="img-fluid" alt="mobile-image">
+                </div>
+                <div class="col-lg-6 mb-lg-5">
+
+                    <div class="feature-grids text-left mt-5 p-lg-5">
+                        <div class="bottom-gd my-lg-5">
+                            <h3 class="my-4">Get a ride in minutes</h3>
+                            <p>At Routes, we believe in ease of transportation and constantly try to make this a reality for all our riders. We have an amazing team of bright minds who everyday find new ways to make your journey seamless using the best routes. Try us today
+                            </p>
+                        </div>
+                        
+                        <ul class="list-unstyled apps-lists">
+                            <li>
+                                <a href="#" class="btn"><img src="{% static 'home/images/playstore.png' %}" alt="Download the Routes Android app here" width="120px"></a>
+                            </li>
+                            <li class="ml-2">
+                                <a href="#" class="btn"><img src="{% static 'home/images/apple.png' %}" alt="Download the Routes iOS app here" width="120px"></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--// banner-bottom-w3layouts-->
+
+    <!-- contact -->
+    <section class="contact py-5" id="contact">
+        <div class="container pb-md-5">
+            <div class="header py-lg-5 pb-3 text-center">
+                <h3 class="tittle mb-lg-5 mb-3">Have a Question?</h3>
+            </div>
+
+            <div class="contact-form mx-auto text-left">
+                <form name="contactform" id="contactform1" method="post" action="#">
+                    {{contact.as_p}}
+                        <div class="col-lg-4 contact-page">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+            <ul class="list-unstyled row text-left mb-lg-5 mb-3">
+                <li class="col-lg-6 col-sm-12 adress-info">
+                    <div class="row">
+                        <div class="col-md-3 text-lg-center adress-icon">
+                            <span class="fa fa-envelope-open-o"></span>
+                        </div>
+                        <div class="col-md-9 text-left">
+                            <h6>Email</h6>
+                            <a href="mailto:customersupport@connectroutes.com">customersupport@connectroutes.com</a>
+                            <br>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-6 col-sm-12 adress-info">
+                    <div class="row">
+                        <div class="col-md-3 text-lg-center adress-icon">
+                            <span class="fa fa-mobile"></span>
+                        </div>
+                        <div class="col-md-9 text-left">
+                            <h6>Phone Number</h6>
+                            <p>+ 1234567890</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    <!-- //contact -->
+    <!-- footer -->
+    <footer>
+        <div class="asap-lavi-footer-sec py-5">
+            <div class="container py-lg-3">
+                <div class="row">
+                    <div class="col-lg-5 asap-w3pvt-footer-logo">
+                        <!-- footer logo -->
+                        <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'home/images/longlogo.jpeg' %}" width="140px"/></a>
+    
+                        <!-- //footer logo -->
+                    </div>
+                    <!-- button -->
+                    <div class="col-lg-5 asap-w3pvt-footer text-lg-right text-center mt-3">
+                        <ul class="list-unstyled footer-nav-lavi">
+                            <li>
+                                <a href="{% url 'home' %}" class="scroll active">Home</a>
+                            </li>
+                            <li>
+                                <a class="scroll" href="{% url 'home' %}#about">About Routes</a>
+                            </li>
+                            <li>
+                                <a class="scroll" href="{% url 'faq' %}">FAQs</a>
+                            </li>
+                            <li>
+                                <a class="scroll" href="{% url 'driver-reg' %}">Join as Driver</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //button -->
+                    <div class="col-lg-2 mt-lg-0 mt-3">
+                        <div class="button-asap-w3pvts mt-0 text-lg-right text-center">
+                            <a href="{% url 'home' %}#contact" class="btn btn-sm thar-four scroll">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copy-right-sec mt-4 pt-lg-4 pt-3 text-lg-left text-center">
+                    <!-- copyright -->
+                    <p class="col-lg-8 copy-right-grids mt-lg-1">© 2020 Connect Routes. All Rights Reserved.</p>
+                    <!-- //copyright -->
+                    <!-- social icons -->
+                    <div class="col-lg-4 asap-lavi-ocial-icons text-lg-right text-center mt-lg-0 mt-3">
+                        <ul class="list-unstyled w3pvt-icons">
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-facebook-f"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //social icons -->
+                </div>
+                <div class="move-top text-right"><a href="#home" class="move-top"> <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+</body>
+
+</html>

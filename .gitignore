@@ -1,0 +1,7 @@
+.sonarlint/
+.vscode/
+routes/__pycache__
+home/__pycache__
+home/migrations/
+venv/
+db.sqlite3

@@ -1,0 +1,306 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Connect Routes -- FAQs</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Connect Routes -- Get your rides easily." />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="{% static 'home/css/bootstrap.css' %}">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="{% static 'home/css/font-awesome.css' %}" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+    <!-- //Fonts -->
+</head>
+<body>
+    <div class="other-page-content">
+        <header>
+            <div class="container-fluid px-lg-5">
+                <!-- nav -->
+                <nav class="py-4 d-lg-flex">
+                    <div id="logo">
+                        <h1><a href="{% url 'home' %}"><img src="{% static 'home/images/longlogo.jpeg' %}" width="140px"/></a></h1>
+                    </div>
+                    <label for="drop" class="toggle">Menu</label>
+                    <input type="checkbox" id="drop" />
+                    <ul class="menu mt-2 ml-auto">
+                        <li class="active"><a class="other-links" href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'home' %}#about" class="scroll other-links">About Routes</a></li>
+                        <li><a href="{% url 'faq' %}" class="scroll other-links">FAQs</a></li>
+                        <li><a href="{% url 'driver-reg' %}" class="scroll other-links">Join as Driver</a></li>
+                        <li><a href="#contact" class="scroll other-links">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- //nav -->
+            </div>
+        </header>
+    </div>
+    <section class="contact py-5" id="contact">
+        <div class="container pb-md-5">
+            <!-- <div class="row">
+                <div class="col-md-4 col-sm-12"><h1><a href="{% url 'home' %}"><img src="{% static 'home/images/longlogo.jpeg' %}" width="140px"/></a></h1></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+            </div> -->
+            <div class="header py-lg-5 pb-3 text-center">
+                <h3 class="tittle mb-lg-5 mb-3">FAQs</h3>
+            </div>
+            <div class="contact-form mx-auto text-left">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 subtitle">Rider's FAQ</div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
+                </div>
+                <button class="accordion">1.  How does Routes app work?</button>
+                <div class="panel">
+                <p>Routes is a carpooling mobile application that seamlessly connects passengers to drivers going to the same destination thereby providing safe affordable and timely rides for passengers.</p>
+                </div>
+                <button class="accordion">2. How to request a ride?</button>
+                <div class="panel">
+                <p>
+                    <ol>
+                        <li>Open your app and enter your destination in the ‘Where to?’ field, you will be redirected to the nearest bus stops to your destination</li>
+                        <li>Confirm your pickup location by selecting the nearest bus stop to you.</li>
+                        <li>Select ‘Confirm Pickup’ to send your request to eligible drivers in your area.</li>
+                        <li>Once a driver accepts your request, you will see their location, estimated time of arrival, driver and vehicle details.</li>
+                        <li>ROUTES will send you notifications when your driver is close to your pickup bus stop.</li>
+                    </ol>
+                </p>
+                </div>
+                <button class="accordion">3. How to get a price estimate for my trip?</button>
+                <div class="panel">
+                <p>
+                    Fares are calculated using time and distance of a trip. Toll fees are added to some trips. When there are more riders than available drivers, prices temporarily increase until supply and demand are rebalanced.
+                    <p><strong>Sample price estimates do not reflect variations due to discounts, traffic delays or other factors. Actual prices may vary.</strong></p>
+                </p>
+                </div>
+                <button class="accordion">4. When and Where is ROUTES available in my state/country?</button>
+                <div class="panel">
+                <p>ROUTES is presently available in Lagos Nigeria. With ROUTES, you can request a ride in any bus stop in Lagos 24 hours a day, 7 days a week.</p>
+                </div>
+                <button class="accordion">5. How to schedule a ride in advance?</button>
+                <div class="panel">
+                <p>Schedule a ROUTES ride 30 minutes to 30 days in advance of when you would like to be picked up by tapping on the *** icon before you confirm your ride.
+                    <p><strong>Scheduling a ride in advance does not guarantee you will be connected with a driver.</strong></p>
+                </p>
+                </div>
+                <button class="accordion">6. How to request a specific driver?</button>
+                <div class="panel">
+                <p>The ROUTES app cannot match you with a specific driver.
+                    When you request a ride, your app sends your request to nearby drivers to pick you up at your pickup bus stop.
+                </p>
+                </div>
+                <button class="accordion">7. What is my pickup location?</button>
+                <div class="panel">
+                <p>Pickup location refers to the nearest major bus stop closest to you at the time of making a ride request.</p>
+                </div>
+                <button class="accordion">8. What is my drop-off location?</button>
+                <div class="panel">
+                <p>Drop-off location refers to the nearest major bus stops closest to your destination.</p>
+                </div>
+                <button class="accordion">9. How to contact a driver?</button>
+                <div class="panel">
+                <p>
+                    If you wish to contact your driver about a pickup location or talk about other details of the ride you requested, you can do that through the app. To contact your driver:
+                    <ol>
+                        <li>Tap the bar that displays the driver’s information.</li>
+                        <li>Select contact to choose between calling or messaging your driver</li>
+                    </ol>                   
+                    <p><strong>Note: Drivers may not answer their phones or reply to a text while driving.</strong></p>
+                </p>
+                </div>
+                <button class="accordion">10. Am I charged for cancelling an ROUTES ride?</button>
+                <div class="panel">
+                <p>You can cancel a trip at any time through the ROUTES app, but may be charged a cancellation fee if you cancel after you are matched with your driver. Cancellation fees pay drivers for the time and effort they spend in getting to your location.
+                    Ride requests should only be made when you are ready and near the pick up bus stop. This ensures smooth pickups for riders and drivers.
+                    <p><strong>You won’t be charged a cancellation fee if: </strong></p>
+                    <ol>
+                        <li>Your driver took much longer than expected to arrive.</li>
+                        <li>ROUTES detects that your driver isn’t making much progress to your pickup bus stop.</li>
+                    </ol>
+
+                    <p><strong>You will be charged a cancellation fee if: </strong></p>
+                    <ol>
+                        <li>You cancel a few minutes after a driver accepts the trip.</li>
+                        <li>Your driver cancels after waiting for more than 5  minutes at your pickup bus stop.</li>
+                    </ol>
+                </p>
+                </div>
+                <button class="accordion">11. Select a payment method for a ride</button>
+                <div class="panel">
+                <p>You can select a payment method for a ride while booking for the ride. You can choose between cash or debit card payment.</p>
+                </div>
+                <button class="accordion">12. Do riders pay tolls?</button>
+                <div class="panel">
+                <p>Yes, however the cost for the tolls will be split by the number of people in the vehicle and added to the total fare of the trip.</p>
+                </div>
+                <button class="accordion">13. Rating a driver</button>
+                <div class="panel">
+                <p>Ratings allow us to ensure a great experience for both riders and drivers. We take ratings very seriously. 
+                    In the app at the end of each trip, or at the bottom of your emailed receipt, you will be able to rate your driver from 1 to 5 stars. You can also provide specific feedback about the trip or driver.
+                    Certain issues (fare amount, app issues etc.) are not your driver’s fault and should not be selected as reasons for a low rating.
+                    Drivers will never see the specific rating you give.
+                </p>
+                </div>
+                <button class="accordion">14. Getting a receipt</button>
+                <div class="panel">
+                <p>When a trip ends, we automatically send a receipt to the email address on your ROUTES account. If you aren’t receiving receipts, check the spam or junk folder of this email address. You can review your email address by selecting ‘Settings’ from your app menu. Tap your email address to update it.</p>
+                </div>
+                <button class="accordion">15. Is Routes safe?</button>
+                <div class="panel">
+                <p>Routes rider’s app has a panic button that sends details of your ride that includes your current location, your destination, driver’s name, vehicle details to three contacts that you’ve provided as your emergency contact. The panic button also alerts us to track the driver’s phone and monitor the ride.</p>
+                </div>
+            </div>
+            <div class="contact-form mx-auto text-left">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 subtitle">Driver's FAQ</div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
+                </div>
+                <button class="accordion">1.  How does Routes app work?</button>
+                <div class="panel">
+                <p>Routes is a carpooling mobile application that seamlessly connects passengers to drivers going to the same destination thereby providing safe affordable and timely rides for passengers.</p>
+                </div>
+                <button class="accordion">2. How long does the application process take?</button>
+                <div class="panel">
+                <p>The application process takes anywhere from 2 to 5 working days after submission of your online application.</p>
+                </div>
+                <button class="accordion">3. How do I get paid?</button>
+                <div class="panel">
+                    <p>Drivers are paid in two ways, either through cash after a passenger pays with cash for a trip or through transfers to the bank account every week. 
+                        Drivers earn 70% of the fare and are allowed a maximum of 10,000 naira cash cap after which they are to remit 30% of the fare to Routes before they are allowed to accept new rides.
+                    </p>
+                </div>
+                <button class="accordion">4. How to give a ride?</button>
+                <div class="panel">
+                    <p>At the top of the screen, slide the steering wheel icon to the right to go online. This lets you receive ride requests. To see what different requests looks like in the app, skip to How rides appear in the app.
+                        Once you're online, follow these steps:
+                        <ol>
+                            <li>When you get a ride request, you'll see a notification with the passenger's name, pickup ETA, and ride type. Tap anywhere to accept.</li>
+                            <li>Tap the arrow next to the pickup location</li>
+                            <li>Select 'Tap to arrive' when you’re at the pickup location. Tap 'Confirm arrival' to send the rider a text (if we haven't already).</li>
+                            <li>Tap 'Pick up (passenger's name)' when the rider gets in to start the ride.</li>
+                            <li>Tap 'Navigate' to begin navigation, then drive the rider to their destination.</li>
+                            <li>Tap 'Tap to drop off' when you arrive at the drop-off location, then tap 'Confirm drop off' to end the ride.</li>
+                            <li>Tap the star icon to rate the passenger manually, or let the timer finish to auto-rate the passenger 5 stars. That's it</li>
+                        </ol>
+                    </p>
+                </div>
+                <button class="accordion">5. Do I need insurance?</button>
+                <div class="panel">
+                <p>Yes, all Routes vehicles are required to have comprehensive insurance cover on them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="asap-lavi-footer-sec py-5">
+            <div class="container py-lg-3">
+                <div class="row">
+                    <div class="col-lg-5 asap-w3pvt-footer-logo">
+                        <!-- footer logo -->
+                        <a class="navbar-brand" href="index.html"><img src="{% static 'home/images/longlogo.jpeg' %}" width="140px"/></a>
+                        <!-- //footer logo -->
+                    </div>
+                    <!-- button -->
+                    <div class="col-lg-5 asap-w3pvt-footer text-lg-right text-center mt-3">
+                        <ul class="list-unstyled footer-nav-lavi">
+                            <li>
+                                <a href="{% url 'home' %}" class="scroll active">Home</a>
+                            </li>
+                            <li>
+                                <a class="scroll" href="{% url 'home' %}#about">About Routes</a>
+                            </li>
+                            <li>
+                                <a class="scroll" href="{% url 'faq' %}">FAQs</a>
+                            </li>
+                            <li>
+                                <a class="scroll" href="{% url 'driver-reg' %}">Join as Driver</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //button -->
+                    <div class="col-lg-2 mt-lg-0 mt-3">
+                        <div class="button-asap-w3pvts mt-0 text-lg-right text-center">
+                            <a href="{% url 'home' %}#contact" class="btn btn-sm thar-four scroll">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row copy-right-sec mt-4 pt-lg-4 pt-3 text-lg-left text-center">
+                    <!-- copyright -->
+                    <p class="col-lg-8 copy-right-grids mt-lg-1">© 2020 Connect Routes. All Rights Reserved.</p>
+                    <!-- //copyright -->
+                    <!-- social icons -->
+                    <div class="col-lg-4 asap-lavi-ocial-icons text-lg-right text-center mt-lg-0 mt-3">
+                        <ul class="list-unstyled w3pvt-icons">
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-facebook-f"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-dribbble"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-vk"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //social icons -->
+                </div>
+                <div class="move-top text-right"><a href="#home" class="move-top"> <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+</body>
+</html>
