@@ -57,7 +57,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <input type="checkbox" id="drop" />
                         <ul class="menu mt-2 ml-auto">
                             <li><a class="scroll" href="{% url 'home' %}">Home</a></li>
-                            <li><a href="#about" class="scroll">About</a></li>
+                            <li><a href="{% url 'about' %}" class="scroll">About</a></li>
                             <li><a href="{% url 'driver-reg' %}" class="scroll">Join As Driver</a></li>
                             <li><a href="{% url 'faq' %}" class="scroll">FAQs</a></li>
                             <li><a href="#contact" class="scroll">Contact</a></li>
@@ -123,7 +123,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <section class="driver-signup">
         <div class="container">
             <div class="col-md-12 content-left-bottom text-left pr-lg-5">
-                <h4 class="text-center" id="text-white">Do you want to earn extra?</h4>
+                <h4 class="text-center" id="text-white">Looking to earn extra cash?</h4>
                 <p class="mt-2 text-center white-text"><a href="{% url 'driver-reg' %}" class="driver-link btn">SIGN UP TO DRIVE</a></p>
             </div>
         </div>
@@ -239,7 +239,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container-fluid pt-lg-5">
             <div class="ab-grids row text-left">
                 <div class="col-lg-6 pl-0 pr-lg-5 mt-lg-5 app-mob">
-                    <img src="{% static 'home/images/app1.png' %}" class="img-fluid" alt="mobile-image">
+                    <img src="{% static 'home/images/hand.png' %}" width="2500px" class="img-fluid" alt="mobile-image">
                 </div>
                 <div class="col-lg-6 mb-lg-5">
 

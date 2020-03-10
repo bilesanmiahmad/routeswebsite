@@ -25,5 +25,6 @@ urlpatterns = [
     path('faqs', hv.faq, name='faq'),
     path('terms-of-service', hv.service, name='service'),
     path('privacy-policy', hv.privacy_policy, name='policy'),
-    path('quiz', hv.quiz, name='quiz')
+    path('quiz', hv.quiz, name='quiz'),
+    path('about', hv.about, name='about'),
 ]

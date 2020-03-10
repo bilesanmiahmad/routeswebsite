@@ -40,3 +40,6 @@ def privacy_policy(request):
 def quiz(request):
     return render(request, 'home/quiz.html')
 
+
+def about(request):
+    return render(request, 'home/about.html')

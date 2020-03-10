@@ -30,6 +30,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
     <!-- //Fonts -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'home/images/favicon.ico' %}">
 </head>
 <body>
     <div class="other-page-content">
@@ -44,7 +46,7 @@
                     <input type="checkbox" id="drop" />
                     <ul class="menu mt-2 ml-auto">
                         <li class="active"><a class="other-links" href="{% url 'home' %}">Home</a></li>
-                        <li><a href="{% url 'home' %}#about" class="scroll other-links">About Routes</a></li>
+                        <li><a href="{% url 'about' %}" class="scroll other-links">About Routes</a></li>
                         <li><a href="{% url 'faq' %}" class="scroll other-links">FAQs</a></li>
                         <li><a href="{% url 'driver-reg' %}" class="scroll other-links">Join as Driver</a></li>
                         <li><a href="#contact" class="scroll other-links">Contact</a></li>

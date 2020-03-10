@@ -30,21 +30,23 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
     <!-- //Fonts -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'home/images/favicon.ico' %}">
 </head>
 <body>
     <div class="other-page-content">
-        <header>
+        <header class="mb-sm-5">
             <div class="container-fluid px-lg-5">
                 <!-- nav -->
                 <nav class="py-4 d-lg-flex">
                     <div id="logo">
-                        <h1><a href="{% url 'home' %}"><img src="{% static 'home/images/longlogo.jpeg' %}" width="140px"/></a></h1>
+                        <h1><a href="{% url 'home' %}"><img src="{% static 'home/images/long.png' %}" width="140px"/></a></h1>
                     </div>
                     <label for="drop" class="toggle">Menu</label>
                     <input type="checkbox" id="drop" />
                     <ul class="menu mt-2 ml-auto">
                         <li class="active"><a class="other-links" href="{% url 'home' %}">Home</a></li>
-                        <li><a href="#about" class="scroll other-links">About Routes</a></li>
+                        <li><a href="{% url 'about' %}" class="scroll other-links">About Routes</a></li>
                         <li><a href="{% url 'faq' %}" class="scroll other-links">FAQs</a></li>
                         <li><a href="{% url 'driver-reg' %}" class="scroll other-links">Join as Driver</a></li>
                         <li><a href="{% url 'home' %}#contact" class="scroll other-links">Contact</a></li>
@@ -62,7 +64,7 @@
                 <div class="col-md-4"></div>
             </div> -->
             <div class="header py-lg-5 pb-3 text-center">
-                <h3 class="tittle mb-lg-5 mb-3">Driver Registration</h3>
+                <h3 class="tittle mb-lg-5 mb-3 mt-5">Driver Registration</h3>
             </div>
             <div class="contact-form mx-auto text-left">
                 <form name="contactform" id="contactform1" method="post" action="#">
