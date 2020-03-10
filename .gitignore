@@ -6,3 +6,4 @@ home/migrations/
 venv/
 db.sqlite3
 .env
+nohup.out
