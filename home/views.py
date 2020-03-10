@@ -12,7 +12,7 @@ def index(request):
             email = contact_form.cleaned_data['email']
             message = contact_form.cleaned_data['message']
             send_mail(
-                f'Client Request Email from {fname} with email {email}',
+                'Client Request Email from' + fname + 'with email' + email,
                 message,
                 'customersupport@connectroutes.com',
                 ['abilesanmi@connectroutes.com', 'customersupport@connectroutes.com']
