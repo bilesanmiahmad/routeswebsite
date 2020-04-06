@@ -452,10 +452,13 @@ li > a:only-child:after {
 
 .layer {
     min-height: 50em;
-    /* background: rgba(0, 0, 0, 0.57); */
+    background: rgba(0, 0, 0, 0.57);
 }
 
-
+.about-layer{
+    min-height: 50em;
+    background: rgba(0, 0, 0, 0.57);
+}
 
 .banner-info-w3ls {
     padding-top: 20em;
@@ -1351,6 +1354,7 @@ li{
     .main-content,
     .layer, .other-side, .first-side {
         min-height: 40em;
+        background: rgba(0, 0, 0, 0.57);
     }
 
     .order-info {

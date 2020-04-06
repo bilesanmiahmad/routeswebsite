@@ -22,6 +22,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     path('', hv.index, name='home'),
     path('driver-registration', hv.driver_registration, name="driver-reg"),
+    path('vehicle-registration', hv.vehicle_registration, name="car-reg"),
+    path('otp-registration', hv.otp_registration, name='otp-reg'),
     path('faqs', hv.faq, name='faq'),
     path('terms-of-service', hv.service, name='service'),
     path('privacy-policy', hv.privacy_policy, name='policy'),
