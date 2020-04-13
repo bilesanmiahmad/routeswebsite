@@ -47,9 +47,9 @@
                     <ul class="menu mt-2 ml-auto">
                         <li class="active"><a href="{% url 'home' %}">Home</a></li>
                         <li><a href="{% url 'about' %}" class="scroll">About Routes</a></li>
-                        <li><a href="{% url 'faq' %}" class="scroll">FAQs</a></li>
                         <li><a href="{% url 'driver-reg' %}" class="scroll">Join as Driver</a></li>
-                        <li><a href="#contact" class="scroll">Contact</a></li>
+                        <li><a href="{% url 'home' %}#contact" class="scroll">Contact</a></li>
+                        <li><a href="{% url 'faq' %}" class="scroll">FAQs</a></li>
                     </ul>
                 </nav>
                 <!-- //nav -->
@@ -90,7 +90,7 @@
                     <!-- //button -->
                     <div class="col-lg-2 mt-lg-0 mt-3">
                         <div class="button-asap-w3pvts mt-0 text-lg-right text-center">
-                            <a href="{% url 'home' %}#contact" class="btn btn-sm thar-four scroll">Contact Me</a>
+                            <a href="{% url 'home' %}#contact" class="btn btn-sm thar-four scroll">Contact Us</a>
                         </div>
                     </div>
                 </div>

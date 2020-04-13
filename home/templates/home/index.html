@@ -59,8 +59,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <li><a class="scroll" href="{% url 'home' %}">Home</a></li>
                             <li><a href="{% url 'about' %}" class="scroll">About</a></li>
                             <li><a href="{% url 'driver-reg' %}" class="scroll">Join As Driver</a></li>
-                            <li><a href="{% url 'faq' %}" class="scroll">FAQs</a></li>
                             <li><a href="#contact" class="scroll">Contact</a></li>
+                            <li><a href="{% url 'faq' %}" class="scroll">FAQs</a></li>
                         </ul>
                     </nav>
                     <!-- //nav -->
@@ -122,9 +122,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </section> -->
     <section class="driver-signup">
         <div class="container">
-            <div class="col-md-12 content-left-bottom text-left pr-lg-5">
+            <div class="col-md-12 content-left-bottom text-center pr-lg-5">
                 <h4 class="text-center" id="text-white">Looking to earn extra cash?</h4>
-                <p class="mt-2 text-center white-text"><a href="{% url 'driver-reg' %}" class="driver-link btn">SIGN UP TO DRIVE</a></p>
+                <p class="mt-2 text-center white-text"><a href="{% url 'driver-reg' %}" class="driver-link">DOWNLOAD AND SIGN UP TO DRIVE</a></p>
+                <div class="row text-center">
+                    <div class="col-md-4"></div>
+                    <ul class="list-unstyled apps-lists col-md-4">
+                        <li>
+                            <a href="#"><img src="{% static 'home/images/playstore.png' %}" width="150px" alt=""></a>
+                        </li>
+                        <li class="ml-2">
+                            <a href="#"><img src="{% static 'home/images/apple.png' %}" width="150px" alt=""></a>
+                        </li>
+                    </ul>
+                    <div class="col-md-4"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -282,9 +294,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <button type="submit" class="btn btn-default">Submit</button>
                             </div>
                         </div>
-
-                    </div>
-
                 </form>
             </div>
             <ul class="list-unstyled row text-left mb-lg-5 mb-3">
