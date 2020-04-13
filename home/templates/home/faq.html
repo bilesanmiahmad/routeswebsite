@@ -47,7 +47,16 @@
                     <ul class="menu mt-2 ml-auto">
                         <li class="active"><a class="other-links" href="{% url 'home' %}">Home</a></li>
                         <li><a href="{% url 'about' %}" class="scroll other-links">About Routes</a></li>
-                        <li><a href="{% url 'driver-reg' %}" class="scroll other-links">Join as Driver</a></li>
+                        <li>
+                            <!-- First Tier Drop Down -->
+                            <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                            <a href="#" class="other-links">Join As Driver <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                            <input type="checkbox" id="drop-2" />
+                            <ul class="inner-ul">
+                                <li><a class="scroll" href="#">Google Play Store</a></li>
+                                <li><a href="#" class="scroll">Apple App Store</a></li>
+                            </ul>
+                        </li>
                         <li><a href="{% url 'home' %}#contact" class="scroll other-links">Contact</a></li>
                         <li><a href="{% url 'faq' %}" class="scroll other-links">FAQs</a></li>
                     </ul>
@@ -257,6 +266,11 @@
                             <li>
                                 <a href="#">
                                     <span class="fa fa-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-instagram"></span>
                                 </a>
                             </li>
                         </ul>

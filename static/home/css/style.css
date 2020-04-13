@@ -147,10 +147,10 @@ nav ul li {
 nav ul.menu li a {
     color: #fff;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 1.1em;
     padding-left: 0;
     padding-right: 0;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5em;
     letter-spacing: 1px;
     background: transparent;
     font-weight: 600;
@@ -450,13 +450,10 @@ li > a:only-child:after {
 
 .layer {
     min-height: 50em;
-    background: rgba(0, 0, 0, 0.57);
+    /* background: rgba(0, 0, 0, 0.57); */
 }
 
-.about-layer{
-    min-height: 50em;
-    background: rgba(0, 0, 0, 0.57);
-}
+
 
 .banner-info-w3ls {
     padding-top: 20em;
@@ -1352,7 +1349,6 @@ li{
     .main-content,
     .layer, .other-side, .first-side {
         min-height: 40em;
-        background: rgba(0, 0, 0, 0.57);
     }
 
     .order-info {

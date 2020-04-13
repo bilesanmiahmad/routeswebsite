@@ -58,7 +58,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <ul class="menu mt-2 ml-auto">
                             <li><a class="scroll" href="{% url 'home' %}">Home</a></li>
                             <li><a href="{% url 'about' %}" class="scroll">About</a></li>
-                            <li><a href="{% url 'driver-reg' %}" class="scroll">Join As Driver</a></li>
+                            <li>
+                                <!-- First Tier Drop Down -->
+                                <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                                <a href="#">Join As Driver <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                <input type="checkbox" id="drop-2" />
+                                <ul class="inner-ul">
+                                    <li><a class="scroll" href="#">Google Play Store</a></li>
+                                    <li><a href="#" class="scroll">Apple App Store</a></li>
+                                </ul>
+                            </li>
                             <li><a href="{% url 'home' %}#contact" class="scroll">Contact</a></li>
                             <li><a href="{% url 'faq' %}" class="scroll">FAQs</a></li>
 
@@ -135,6 +144,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <li>
                                 <a href="#">
                                     <span class="fa fa-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-instagram"></span>
                                 </a>
                             </li>
                         </ul>

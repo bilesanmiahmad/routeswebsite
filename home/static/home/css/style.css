@@ -397,8 +397,6 @@ li > a:only-child:after {
 .driver-link{
     text-decoration: none;
     color: #fff !important;
-    border: #fff 2px solid;
-    border-radius: 8px;
 }
 
 .login-icon p {
