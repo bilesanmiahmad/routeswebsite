@@ -1173,7 +1173,7 @@ footer {
     background: #022B69;
 }
 
-.copy-right-sec. {
+.copy-right-sec {
     border-top: 1px solid #353638;
 }
 
@@ -1621,6 +1621,12 @@ li{
     .adress-info{
         padding-left: 3em;
     }
+
+    .driver-signup {
+        background:#022B69;
+        padding: 1em;
+    }
+    
 }
 
 @media screen and (max-width: 414px) {
@@ -1645,6 +1651,11 @@ li{
     a.read-more {
         padding: 0.6em 1.5em;
     }
+
+    .driver-signup {
+        background:#022B69;
+        padding: 1em;
+    }
 }
 
 @media screen and (max-width: 384px) {
@@ -1666,6 +1677,11 @@ li{
         margin: 0 0.3em;
     }
 
+    .driver-signup {
+        background:#022B69;
+        padding: 1em;
+    }
+
 }
 
 @media screen and (max-width:375px) {
@@ -1679,8 +1695,18 @@ li{
         width: 70%;
         margin: 1em 0;
     }
+
+    .driver-signup {
+        background:#022B69;
+        padding: 1em;
+    }
 }
 
-@media screen and (max-width:320px) {}
+@media screen and (max-width:320px) {
+    .driver-signup {
+        background:#022B69;
+        padding: 1em;
+    }
+}
 
 /*-- //Responsive design --*/
