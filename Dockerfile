@@ -1,9 +1,13 @@
-FROM python:3.6
+FROM python:3
 
-RUN mkdir /app
-WORKDIR /app 
+ENV PYTHONDONTWRITEBYTECODE 1
 
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+ENV PYTHONUNBUFFERED 1
 
-COPY . .
+WORKDIR /app
+
+COPY requirements.txt /app/
+
+RUN pip install -r requirements.txt
+
+COPY . /app/

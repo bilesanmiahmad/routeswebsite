@@ -1,4 +1,4 @@
-Django==2.2
+Django==2.2.3
 googleapis-common-protos==1.51.0
 grpcio==1.27.2
 grpcio-tools==1.27.2
@@ -6,3 +6,4 @@ protobuf==3.11.3
 pytz==2019.3
 six==1.14.0
 sqlparse==0.3.0
+python-decouple==3.1
